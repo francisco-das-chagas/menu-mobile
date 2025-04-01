@@ -43,9 +43,6 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  #btn-mobile {
-    display: block;
-  }
   #menu {
     display: block;
     position: absolute;
@@ -68,5 +65,28 @@ a:hover {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+  #hamburguer {
+    width: 20px;
+    border-top: 2px solid;
+  }
+  #hamburguer::after, 
+  #hamburguer::before {
+    content: '';
+    display: block;
+    top: 10px;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
   }
 }
